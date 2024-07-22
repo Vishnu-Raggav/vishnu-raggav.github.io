@@ -14,7 +14,11 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
 }
+body::-webkit-scrollbar { 
+    display: none;
+}
 .pages {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -28,8 +32,8 @@ body {
     display: flex;
     width: fit-content;
     height: fit-content;
-    top: 80px;
-    left: 80px;
+    top: 8%;
+    left: 5%;
     font-weight: 500; 
     font-size: 20px;
 }
@@ -49,8 +53,8 @@ body {
     padding: 3px 15px;
 }
 .main {
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top: 27%;
     left: 250px;
     width: fit-content;
     height: fit-content;
@@ -63,9 +67,9 @@ body {
     font-size: 100px;
 }
 .sub {
-    position: relative;
-    top: 260px;
-    left: 550px;
+    position: absolute;
+    top: 55%;
+    left: 38%;
     width: fit-content;
     height: fit-content;
 }
@@ -81,18 +85,26 @@ body {
 #line {
     position: absolute;
     background-color: var(--text);
-    top: 620px;
+    top: 70%;
+    left: 94%;
     width: 2px;
     height: 200px;
-    left: 1350px;
 }
 .down_text {
-    position: relative;
+    position: absolute;
     white-space: nowrap;
-    top: 190px;
-    right: 1280px;
     font-size: 19px;
     font-weight: 500;
+    top: 90%;
+    left: 5%;
+}
+#projects_wrapper {
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 55%;
+    left: 35%;
 }
 .project_box {
     display: flex;
@@ -114,23 +126,20 @@ body {
     justify-content: center;
     padding: 3px;
     margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: var(--text);
 }
 a {
     text-decoration: none;
     color: var(--text);
     font-weight: 500;
+    transition: color 0.3s;
 }
-#left {
-    position: relative;
-    top: 0px;
-    left: 980px;
+.button:hover a{
+    color: var(--background);
 }
-#down_2_text {
-    width: 250px;
-    position: relative;
-    left: 80px;
-    top: 70px;
-    white-space: nowrap;
-    font-size: 19px;
-    font-weight: 500;
+#second_project {
+    margin-left: 120px;
 }
