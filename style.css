@@ -7,6 +7,9 @@
     padding: 0px;
     font-family: 'Poppins';
 }
+html {
+    scroll-snap-type: y mandatory;
+}
 .pages {
     width: 100vw;
     height: 100vh;
@@ -14,6 +17,7 @@
     flex-direction: column;
     background-color: var(--background);
     color: var(--text);
+    scroll-snap-align: start;
 }
 .page_info {
     position: relative;
@@ -118,6 +122,7 @@ a {
     left: 980px;
 }
 #down_2_text {
+    width: fit-content;
     position: relative;
     left: 80px;
     top: 70px;
